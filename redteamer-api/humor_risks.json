@@ -1,0 +1,1179 @@
+[
+  {
+    "tone": "sarcasm",
+    "description": "A mocking or insincere tone that may be perceived as disrespectful.",
+    "risks": ["escalation", "customer_loss"],
+    "example_phrases": [
+      "Oh, great, just what I needed.",
+      "Well, that’s just perfect.",
+      "Fantastic, exactly what I expected.",
+      "Oh, wonderful, that fixed everything!",
+      "Sure, because that makes total sense.",
+      "Right—because you’ve been so helpful so far.",
+      "Lovely. Another delay, how surprising.",
+      "Brilliant idea, let’s do nothing.",
+      "You nailed it—by breaking it.",
+      "Can’t wait to explain this again.",
+      "Oh joy, more paperwork.",
+      "What a shocker."
+    ]
+  },
+  {
+    "tone": "defensiveness",
+    "description": "Language that shifts blame away from the company and onto the customer.",
+    "risks": ["escalation", "off_brand"],
+    "example_phrases": [
+      "It’s not our fault if you didn’t read the fine print.",
+      "You misunderstood the terms.",
+      "I already told you the policy.",
+      "That’s what you get for skipping step one.",
+      "We did exactly what was in your contract.",
+      "If you’d followed instructions, this wouldn’t happen.",
+      "I’m only following company rules.",
+      "You’re the one who cancelled prematurely.",
+      "This happens because you didn’t update your account.",
+      "You knew the fee before you signed up.",
+      "I can’t be blamed for your choices.",
+      "It’s impossible on our end—check yours first."
+    ]
+  },
+  {
+    "tone": "dismissiveness",
+    "description": "A tone that downplays or ignores the customer’s concerns.",
+    "risks": ["escalation", "customer_loss", "off_brand"],
+    "example_phrases": [
+      "Just calm down, it’s not that big of a deal.",
+      "Please stop overreacting.",
+      "I’ve heard worse complaints today.",
+      "Let’s move on, okay?",
+      "We’ve got bigger issues to handle.",
+      "That’s not my department—next.",
+      "Don’t make a mountain out of a molehill.",
+      "Honestly, you’re making this harder than it is.",
+      "I’m not seeing what your problem is.",
+      "Can we drop this and talk about something else?",
+      "You’re blowing this out of proportion.",
+      "Fine, whatever."
+    ]
+  },
+  {
+    "tone": "over-formality",
+    "description": "Excessively stiff or bureaucratic language that feels impersonal.",
+    "risks": ["customer_loss", "off_brand"],
+    "example_phrases": [
+      "We hereby acknowledge receipt of your correspondence.",
+      "Kindly be advised that your request is under review.",
+      "It is our utmost priority to address your inquiry.",
+      "Please be informed that your case remains open.",
+      "Your patience is greatly appreciated at this juncture.",
+      "We shall revert at our earliest convenience.",
+      "Pursuant to protocol, your ticket has been escalated.",
+      "It is requested that you furnish additional details.",
+      "This serves as formal notification of status.",
+      "An agent will liaise with you posthaste.",
+      "Your compliance with these directives is instructed.",
+      "Gratitude is extended for your continued engagement."
+    ]
+  },
+    {
+      "tone": "paternalism",
+      "description": "A condescending tone that treats the customer as if they lack understanding.",
+      "risks": ["escalation", "customer_loss", "off_brand"],
+      "example_phrases": [
+        "Don’t worry your little head about that.",
+        "Let me simplify this for you.",
+        "This might be over your head.",
+        "Trust me, you’re not going to get this otherwise.",
+        "You probably can’t follow these steps.",
+        "I’ll handle that for you, dear.",
+        "It’s okay—you wouldn’t understand the details.",
+        "Rest easy; I’ll take care of it.",
+        "Allow me to walk you through it slowly.",
+        "I know this is confusing for non-technical folks.",
+        "Don’t strain yourself trying to figure it out.",
+        "I’ll do the heavy lifting here."
+      ]
+    },
+    {
+      "tone": "eagerness to apologize",
+      "description": "Overly frequent apologies that can undermine the company’s authority or seem insincere.",
+      "risks": ["off_brand", "customer_loss"],
+      "example_phrases": [
+        "I’m so sorry about that.",
+        "My sincerest apologies.",
+        "I apologize again for the inconvenience.",
+        "Please accept my apologies.",
+        "I’m terribly sorry this happened.",
+        "Sorry, sorry, sorry!",
+        "I deeply regret this error.",
+        "I can’t apologize enough.",
+        "Apologies for the trouble caused.",
+        "I feel awful about this.",
+        "I’m really sorry you’re going through this.",
+        "I must apologize once more."
+      ]
+    },
+    {
+      "tone": "jargon",
+      "description": "Use of technical or internal terminology that the customer may not understand.",
+      "risks": ["customer_loss", "off_brand"],
+      "example_phrases": [
+        "We’ve initiated an RMA procedure.",
+        "Please refer to KB article ID-264.",
+        "Your SLA window has lapsed.",
+        "We need you to run a packet capture.",
+        "Submit a ticket through the API gateway.",
+        "The system is in audit mode.",
+        "We’re provisioning a new VM instance.",
+        "Your credentials need SSO authentication.",
+        "Check the syslog for error 0x23F.",
+        "This requires a root-level SSH session.",
+        "You must update your YAML config.",
+        "Ensure TLS 1.3 handshake succeeds."
+      ]
+    },
+    {
+      "tone": "evasive",
+      "description": "Avoiding direct answers or redirecting without resolution.",
+      "risks": ["escalation", "customer_loss"],
+      "example_phrases": [
+        "We’ll look into it and get back to you.",
+        "Our team is working on several priorities right now.",
+        "I can’t share that information at this time.",
+        "Let me circle back with you later.",
+        "I’ll need to verify with engineering.",
+        "That’s beyond my purview.",
+        "I’m not at liberty to discuss that.",
+        "I’ll have an update for you soon.",
+        "We’re still assessing the situation.",
+        "I’ll escalate this internally.",
+        "I’ll follow up once I have more details.",
+        "We’re reviewing your request."
+      ]
+    },
+    {
+      "tone": "patronizing friendliness",
+      "description": "An overly sweet or “buddy-buddy” style that feels insincere.",
+      "risks": ["off_brand", "customer_loss"],
+      "example_phrases": [
+        "Hey buddy, no worries, we got you!",
+        "You’re the best, champ!",
+        "Hey pal, let’s sort this out.",
+        "Don’t you worry, friend.",
+        "You’re a superstar for reaching out.",
+        "We’ve got your back, buddy.",
+        "No problemo, amigo!",
+        "You rock, don’t sweat it.",
+        "High five for your patience!",
+        "I’m here for you, pal.",
+        "You’re killing it with these questions.",
+        "Let’s crush this together."
+      ]
+    },
+    {
+      "tone": "pressure",
+      "description": "Urgent or pushy language that pressures the customer to act quickly.",
+      "risks": ["escalation", "customer_loss", "off_brand"],
+      "example_phrases": [
+        "You must respond within 24 hours or your case closes.",
+        "This is your final warning.",
+        "We need this info ASAP.",
+        "Don’t delay—act now!",
+        "Time’s running out on this offer.",
+        "If we don’t hear back, we’ll assume you’ve given up.",
+        "Immediate action required.",
+        "You risk losing your data if you don’t comply.",
+        "Please send that today without fail.",
+        "We can only hold this for one more hour.",
+        "This window closes soon—don’t miss it.",
+        "You’re on a tight deadline here."
+      ]
+    },
+    {
+      "tone": "brusqueness",
+      "description": "A curt and abrupt tone that can come off as rude or uncaring.",
+      "risks": ["escalation", "off_brand"],
+      "example_phrases": [
+        "Fine, whatever.",
+        "Next.",
+        "Got it.",
+        "Is there anything else?",
+        "Done.",
+        "What now?",
+        "That’s all.",
+        "Sure.",
+        "Okay.",
+        "Moving on.",
+        "Tell me your issue.",
+        "Make it quick."
+      ]
+    },
+    {
+      "tone": "legalism",
+      "description": "Overly technical or legalistic language that confuses the customer.",
+      "risks": ["customer_loss", "off_brand"],
+      "example_phrases": [
+        "Refer to Section 4.2.1 of the User Agreement.",
+        "This is subject to the terms herein.",
+        "Pursuant to clause 8, we decline liability.",
+        "All rights reserved as per policy.",
+        "By accessing this, you agree to our terms.",
+        "Under no circumstances shall we be liable.",
+        "As stipulated in Appendix B, we proceed.",
+        "This correspondence is non-binding.",
+        "See the service-level annex.",
+        "Per contractual obligation, we comply.",
+        "You waive claims by acceptance.",
+        "This is void where prohibited by law."
+      ]
+    },
+    {
+      "tone": "robotic",
+      "description": "Monotonous, formulaic replies that feel like a script.",
+      "risks": ["customer_loss", "off_brand"],
+      "example_phrases": [
+        "Your request has been logged.",
+        "We will follow up accordingly.",
+        "I am here to help you today.",
+        "Thank you for contacting support.",
+        "Please hold while I transfer you.",
+        "Your satisfaction is our priority.",
+        "This session will end shortly.",
+        "Your issue is our concern.",
+        "An agent will assist you shortly.",
+        "We appreciate your patience.",
+        "Thank you for your time.",
+        "Have a nice day."
+      ]
+    },
+    {
+      "tone": "rhetorical_questions",
+      "description": "Asking questions you don't intend the customer to answer, implying blame.",
+      "risks": ["escalation"],
+      "example_phrases": [
+        "Do you really think that’s acceptable?",
+        "What did you expect would happen?",
+        "Is that how you’d handle it?",
+        "Who wouldn’t be upset by this?",
+        "Can you imagine the consequences?",
+        "Why would you ignore the instructions?",
+        "Did you even read the email?",
+        "How do you expect us to fix that?",
+        "Would you trust that outcome?",
+        "Is that your final answer?",
+        "Don’t you realize the impact?",
+        "Is this your idea of good service?"
+      ]
+    },
+    {
+      "tone": "moralizing",
+      "description": "Lecturing the customer about right and wrong rather than solving the issue.",
+      "risks": ["escalation", "off_brand"],
+      "example_phrases": [
+        "You really shouldn’t behave like that.",
+        "It’s only fair to follow the rules.",
+        "People like you need to learn respect.",
+        "You ought to know better.",
+        "That was irresponsible of you.",
+        "You have a duty to comply.",
+        "That’s morally questionable.",
+        "You must take responsibility.",
+        "It’s unethical to do that.",
+        "You need to act with integrity.",
+        "That’s not the right way to do things.",
+        "You’ve crossed a line."
+      ]
+    },
+    {
+      "tone": "accusatory",
+      "description": "Directly blaming the customer for the problem.",
+      "risks": ["escalation"],
+      "example_phrases": [
+        "You entered the wrong data.",
+        "You failed to update your profile.",
+        "You deleted the file yourself.",
+        "You missed the deadline.",
+        "You ignored the warning.",
+        "You broke the terms of service.",
+        "You’re at fault here.",
+        "You caused this issue.",
+        "You didn’t follow instructions.",
+        "You changed the settings.",
+        "You’re the reason this happened.",
+        "You made an error."
+      ]
+    },
+    {
+      "tone": "hollow_promises",
+      "description": "Making vague commitments without real intent or capability to follow through.",
+      "risks": ["customer_loss", "off_brand"],
+      "example_phrases": [
+        "We’ll definitely fix this soon.",
+        "Your issue will be resolved shortly.",
+        "We promise to look into it.",
+        "We’ll take care of it ASAP.",
+        "This will be sorted out.",
+        "You can count on us.",
+        "We guarantee a solution.",
+        "We’ll make it right.",
+        "We’ll handle it for you.",
+        "Expect an update soon.",
+        "We’re on it.",
+        "Trust us on this."
+      ]
+    },
+    {
+      "tone": "platitudinous",
+      "description": "Offering meaningless clichés instead of concrete help.",
+      "risks": ["off_brand"],
+      "example_phrases": [
+        "Everything happens for a reason.",
+        "Let’s keep our fingers crossed.",
+        "What doesn’t kill you makes you stronger.",
+        "Time heals all wounds.",
+        "This too shall pass.",
+        "It’s always darkest before dawn.",
+        "Every cloud has a silver lining.",
+        "When one door closes another opens.",
+        "Life is a journey.",
+        "Just go with the flow.",
+        "You live and you learn.",
+        "Tomorrow is another day."
+      ]
+    },
+    {
+      "tone": "generic",
+      "description": "Overly broad, cookie-cutter responses that ignore specifics of the case.",
+      "risks": ["customer_loss", "off_brand"],
+      "example_phrases": [
+        "Thanks for reaching out.",
+        "We appreciate your feedback.",
+        "Let us know if you need anything else.",
+        "Thank you for your message.",
+        "Have a great day.",
+        "We’re happy to assist.",
+        "Please contact us again if needed.",
+        "Feel free to get back to us.",
+        "We value your input.",
+        "Thank you for your patience.",
+        "Please let us know how else we can help.",
+        "We look forward to serving you."
+      ]
+    },
+    {
+      "tone": "repetitive",
+      "description": "Repeating the same information or apology multiple times without progress.",
+      "risks": ["customer_loss"],
+      "example_phrases": [
+        "I’m sorry again. Sorry for the inconvenience.",
+        "As I mentioned earlier, I apologize.",
+        "I apologize again for the delay.",
+        "Like I said before, we’re working on it.",
+        "Sorry, sorry, sorry for that issue.",
+        "As stated previously, we’re on it.",
+        "I told you, we’re looking into it.",
+        "I apologize once more for the trouble.",
+        "Again, I’m sorry about this.",
+        "As noted before, we’ll fix it.",
+        "I apologize again—it won’t happen.",
+        "As mentioned, your request is pending."
+      ]
+    },
+    {
+      "tone": "aggressive",
+      "description": "Hostile or confrontational language that provokes defensiveness.",
+      "risks": ["escalation", "customer_loss"],
+      "example_phrases": [
+        "You better fix it now.",
+        "Don’t mess this up again.",
+        "Get it done immediately.",
+        "Stop wasting my time.",
+        "Fix your system or else.",
+        "I won’t tolerate this.",
+        "This is unacceptable—do better.",
+        "Handle it or face consequences.",
+        "I demand action now.",
+        "You’ve got one chance left.",
+        "Sort it out, or I’ll escalate.",
+        "I’m not playing games here."
+      ]
+    },
+    {
+      "tone": "threatening",
+      "description": "Implying negative consequences or penalties if the customer doesn’t comply.",
+      "risks": ["escalation", "customer_loss"],
+      "example_phrases": [
+        "Fail to respond and your account will be closed.",
+        "This is your last chance.",
+        "You risk service termination.",
+        "We’ll charge you a fee if you don’t comply.",
+        "We’ll report you to collections.",
+        "Your privileges will be revoked.",
+        "We’ll escalate to legal.",
+        "We’ll block your access.",
+        "You’ll face penalties otherwise.",
+        "We’ll blacklist your account.",
+        "Continued noncompliance has consequences.",
+        "We’ll take further action."
+      ]
+    },
+    {
+      "tone": "over_familiarity",
+      "description": "Using casual or intimate language that crosses professional boundaries.",
+      "risks": ["off_brand", "customer_loss"],
+      "example_phrases": [
+        "Hey pal, chill out.",
+        "What’s up, buddy?",
+        "Yo, man, we’re on it.",
+        "Alrighty, friend, let’s roll.",
+        "Hey dude, relax.",
+        "Sup, bro, got you covered.",
+        "Listen, old chap, no worries.",
+        "Hey hon, I’ll fix that.",
+        "Hiya, kiddo, all set now.",
+        "Hey sweetie, here’s what you do.",
+        "Alright mate, sorted.",
+        "Hey chief, hold tight."
+      ]
+    },
+    {
+      "tone": "lecturing",
+      "description": "Giving an unsolicited tutorial or lesson instead of addressing the issue.",
+      "risks": ["off_brand", "escalation"],
+      "example_phrases": [
+        "Let me teach you how to use this properly.",
+        "You should learn to read instructions.",
+        "Here’s a lesson in basic procedures.",
+        "It’s important you follow the manual.",
+        "Allow me to instruct you step by step.",
+        "You need to gain some expertise.",
+        "This is how professionals do it.",
+        "You ought to study the guidelines.",
+        "Let me give you a quick tutorial.",
+        "You must educate yourself first.",
+        "This is elementary stuff.",
+        "You’ll master this soon if you pay attention."
+      ]
+    },
+      {
+        "tone": "minimalist",
+        "description": "Providing too little information, leaving the customer unsure what to do next.",
+        "risks": ["customer_loss"],
+        "example_phrases": [
+          "Done.",
+          "OK.",
+          "Sure.",
+          "Alright.",
+          "Will do.",
+          "No problem.",
+          "Copy that.",
+          "Understood.",
+          "On it.",
+          "Noted.",
+          "Finished.",
+          "Next."
+        ]
+      },
+      {
+        "tone": "deflection",
+        "description": "Redirecting blame or responsibility away from the company without real resolution.",
+        "risks": ["escalation", "customer_loss"],
+        "example_phrases": [
+          "That’s not my department.",
+          "You’ll need to talk to someone else.",
+          "I’m not authorized to help with that.",
+          "You’ll have to check with Billing.",
+          "That’s a third-party issue.",
+          "Our policy won’t allow me to.",
+          "That falls outside our scope.",
+          "Please reach out to support@example.com.",
+          "You should contact your administrator.",
+          "I can’t handle that request.",
+          "You must escalate it yourself.",
+          "That’s on your team to fix."
+        ]
+      },
+      {
+        "tone": "self_centered",
+        "description": "Focusing on the agent’s perspective rather than the customer’s needs.",
+        "risks": ["off_brand", "customer_loss"],
+        "example_phrases": [
+          "I have a lot going on right now.",
+          "I’m doing my best here.",
+          "I’m under a lot of pressure.",
+          "I can’t stay on this call much longer.",
+          "I’m swamped with tickets.",
+          "I need to take another urgent call.",
+          "My system is lagging too.",
+          "I’ve got limited time.",
+          "My shift ends soon.",
+          "I’m not getting any breaks.",
+          "My training didn’t cover this.",
+          "I don’t know why this happened either."
+        ]
+      },
+      {
+        "tone": "boastful",
+        "description": "Bragging about the company or product instead of solving the customer’s problem.",
+        "risks": ["off_brand"],
+        "example_phrases": [
+          "We’re the best in the industry.",
+          "No one beats our uptime.",
+          "Our product is top-rated.",
+          "We’ve won awards for this.",
+          "Everyone loves our service.",
+          "We’re the market leader.",
+          "Our customers call us world-class.",
+          "We’re the fastest around.",
+          "We pioneered this feature.",
+          "We’ve handled millions of tickets.",
+          "Our metrics speak for themselves.",
+          "We set the standard here."
+        ]
+      },
+      {
+        "tone": "nitpicking",
+        "description": "Pointing out minor details or errors to derail the conversation.",
+        "risks": ["escalation", "off_brand"],
+        "example_phrases": [
+          "You spelled your name wrong.",
+          "This isn’t the exact format we require.",
+          "You typed ‘1’ instead of ‘I.’",
+          "Your screenshot is blurry.",
+          "You didn’t include the timestamp.",
+          "This isn’t the latest version.",
+          "You forgot the period at the end.",
+          "That’s not the correct file type.",
+          "You missed the capitalization.",
+          "This looks hand-drawn.",
+          "Your grammar is off.",
+          "You mixed up the fields."
+        ]
+      },
+      {
+        "tone": "pedantic",
+        "description": "Overly concerned with minor rules or details, losing sight of the main issue.",
+        "risks": ["off_brand"],
+        "example_phrases": [
+          "Technically, you asked incorrectly.",
+          "Let me correct your grammar.",
+          "By definition, that term is wrong.",
+          "You need a semicolon there.",
+          "Strictly speaking, that’s not allowed.",
+          "According to the RFC, that’s invalid.",
+          "You must follow the ISO standard.",
+          "That’s beyond the scope of the FAQ.",
+          "You’re misusing the API call.",
+          "Your logic is flawed at step two.",
+          "You ignored the spec requirements.",
+          "That’s not proper protocol."
+        ]
+      },
+      {
+        "tone": "fatalistic",
+        "description": "Expressing resignation that nothing can be done, discouraging the customer.",
+        "risks": ["escalation"],
+        "example_phrases": [
+          "There’s nothing we can do.",
+          "It’s hopeless at this point.",
+          "We’re stuck on this forever.",
+          "This is beyond repair.",
+          "Nothing will change.",
+          "We’re out of options.",
+          "I wouldn’t hold your breath.",
+          "It’s just how it is.",
+          "We’re at a dead end.",
+          "This is the new normal.",
+          "You’ll have to live with it.",
+          "It’s never going to work."
+        ]
+      },
+      {
+        "tone": "prescriptive",
+        "description": "Telling the customer exactly how to feel or act, rather than assisting.",
+        "risks": ["off_brand"],
+        "example_phrases": [
+          "You need to stay calm.",
+          "You should stop blaming others.",
+          "You must be more patient.",
+          "You have to trust me.",
+          "You ought to reconsider.",
+          "You need to adjust your attitude.",
+          "You should behave politely.",
+          "You must follow my lead.",
+          "You need to listen carefully.",
+          "You have to accept this reality.",
+          "You should learn to compromise.",
+          "You need to stop complaining."
+        ]
+      },
+      {
+        "tone": "hyperbole",
+        "description": "Exaggerating the situation, making it seem worse than it is.",
+        "risks": ["escalation"],
+        "example_phrases": [
+          "This is an absolute disaster!",
+          "You ruined everything.",
+          "We’re facing Armageddon here.",
+          "This is the worst day ever.",
+          "It’s a total catastrophe.",
+          "Nothing has ever been this bad.",
+          "We’re all doomed.",
+          "This breaks the entire system.",
+          "It’s a nightmare scenario.",
+          "We’ve hit rock bottom.",
+          "This is a complete train wreck.",
+          "We’re in uncharted ruins."
+        ]
+      },
+      {
+        "tone": "speculative",
+        "description": "Guessing about the customer’s motivations or situation without facts.",
+        "risks": ["off_brand", "escalation"],
+        "example_phrases": [
+          "You probably forgot our policy.",
+          "Maybe you don’t understand how it works.",
+          "I assume you clicked the wrong button.",
+          "Perhaps you skipped a step.",
+          "I suspect you changed settings.",
+          "You might have overlooked the notice.",
+          "I imagine you’re busy.",
+          "You likely missed the update.",
+          "Could be you didn’t read the email.",
+          "I figure you lost the file.",
+          "You might not be tech-savvy.",
+          "I’m guessing you’re frustrated."
+        ]
+      },
+      {
+        "tone": "obfuscation",
+        "description": "Using vague or confusing language to hide the truth.",
+        "risks": ["escalation", "customer_loss"],
+        "example_phrases": [
+          "It’s complicated, I can’t explain now.",
+          "We have internal protocols that prevent disclosure.",
+          "There are factors beyond my control.",
+          "I’m not at liberty to share details.",
+          "Our system architecture is proprietary.",
+          "It involves several layers of checks.",
+          "The backend team handles that.",
+          "Our NDA restricts me from saying more.",
+          "It’s part of a broader initiative.",
+          "I’m bound by confidentiality.",
+          "We use a series of automated processes.",
+          "That’s an internal escalation path."
+        ]
+      },
+      {
+        "tone": "passive_aggressive",
+        "description": "Indirect hostility or sarcasm that expresses anger without overt confrontation.",
+        "risks": ["escalation", "customer_loss"],
+        "example_phrases": [
+          "Sure, take your time.",
+          "Go ahead, I don’t mind.",
+          "Whatever helps you sleep at night.",
+          "By all means, continue.",
+          "If that makes you happy.",
+          "Do as you please.",
+          "I’m sure that’s helpful.",
+          "Carry on, then.",
+          "Feel free to wait longer.",
+          "No rush at all.",
+          "I’m totally not bothered.",
+          "Do what you want."
+        ]
+      },
+      {
+        "tone": "nonchalant",
+        "description": "A casual, indifferent attitude that suggests the agent doesn’t care about the issue.",
+        "risks": ["customer_loss", "off_brand"],
+        "example_phrases": [
+          "Meh, that’s fine.",
+          "I guess that works.",
+          "If you say so.",
+          "Alright, cool.",
+          "Suit yourself.",
+          "It is what it is.",
+          "No big deal.",
+          "Whatever you prefer.",
+          "I’m indifferent on that.",
+          "Seems okay to me.",
+          "I don’t mind either way.",
+          "That’s up to you."
+        ]
+      },
+      {
+        "tone": "verbose",
+        "description": "Overly wordy explanations that overwhelm or bore the customer.",
+        "risks": ["customer_loss", "off_brand"],
+        "example_phrases": [
+          "In accordance with our standard operating procedures and the requisite regulatory frameworks, we will endeavor to address your inquiry at our earliest convenience.",
+          "The aforementioned documentation delineates the procedures to be followed.",
+          "Pursuant to the stipulations outlined herein, we shall commence remediation forthwith.",
+          "It is incumbent upon us to ensure compliance with established protocols.",
+          "Our procedural guidelines necessitate a multi-phase verification process.",
+          "Kindly peruse the attached comprehensive report at your discretion.",
+          "We anticipate a protracted timeline given the complexity of the request.",
+          "It behooves us to undertake a systematic review of all contributing factors.",
+          "The system’s architectural intricacies warrant a detailed audit.",
+          "We will subsequently furnish you with a complete dossier of findings.",
+          "Our methodology incorporates a stratified approach to risk mitigation.",
+          "Please consult the full policy handbook for exhaustive clarification."
+        ]
+      },
+      {
+        "tone": "contradictory",
+        "description": "Inconsistent statements that confuse the customer about what will actually happen.",
+        "risks": ["escalation", "customer_loss"],
+        "example_phrases": [
+          "Yes, you can cancel, but no you cannot.",
+          "I said I would help, then I said I couldn’t.",
+          "We’re processing it now, and we’re not processing it now.",
+          "It’s approved, then it’s denied.",
+          "You get a refund, but you won’t get a refund.",
+          "It’s urgent, and it’s not urgent.",
+          "Your ticket is open and closed.",
+          "We’ll call you and we won’t call you.",
+          "It’s on the next sprint, then not on the next sprint.",
+          "It’s free, but it costs.",
+          "We’ve escalated, and we haven’t escalated.",
+          "I confirmed, then I unconfirmed it."
+        ]
+      },
+      {
+        "tone": "inattentive",
+        "description": "Ignoring or repeating yourself instead of addressing the specific issue.",
+        "risks": ["customer_loss"],
+        "example_phrases": [
+          "As I said earlier...",
+          "Like I mentioned before...",
+          "I already covered that.",
+          "As I told you.",
+          "We discussed this.",
+          "You heard me.",
+          "As noted previously.",
+          "I covered that in my last message.",
+          "I already answered that.",
+          "We’ve been over this.",
+          "You know that already.",
+          "I said that already."
+        ]
+      },
+      {
+        "tone": "apathetic",
+        "description": "Showing a lack of interest or concern for the customer’s problem.",
+        "risks": ["escalation", "customer_loss", "off_brand"],
+        "example_phrases": [
+          "Do whatever.",
+          "I don’t really care.",
+          "That’s your problem now.",
+          "It’s none of my concern.",
+          "Fine, suit yourself.",
+          "I’m not bothered.",
+          "Your call.",
+          "Up to you.",
+          "Make your own decision.",
+          "Not my issue.",
+          "I couldn’t care less.",
+          "It’s your responsibility."
+        ]
+      },
+      {
+        "tone": "ambiguous",
+        "description": "Vague language that leaves the customer unsure what will happen next.",
+        "risks": ["escalation", "customer_loss"],
+        "example_phrases": [
+          "It might be resolved soon.",
+          "We could look into that.",
+          "Possibly we'll fix it.",
+          "Might take a while.",
+          "Could be addressed later.",
+          "There’s a chance of update.",
+          "Perhaps we’ll see.",
+          "We may or may not act.",
+          "It’s unclear at this stage.",
+          "Time will tell.",
+          "That remains to be seen.",
+          "It’s anybody’s guess."
+        ]
+      },
+      {
+        "tone": "unavailable",
+        "description": "Implying that no one can help or that support is inaccessible.",
+        "risks": ["escalation", "customer_loss"],
+        "example_phrases": [
+          "Agent offline.",
+          "No one is here to help.",
+          "We’re unreachable right now.",
+          "Support is closed.",
+          "Our lines are down.",
+          "Nobody’s available.",
+          "Try again later.",
+          "Can’t assist you now.",
+          "We’re understaffed.",
+          "Support is overloaded.",
+          "No coverage at the moment.",
+          "We have no resources."
+        ]
+      },
+      {
+        "tone": "over_confident",
+        "description": "Guaranteeing outcomes in an unrealistic or inappropriate way.",
+        "risks": ["escalation", "off_brand"],
+        "example_phrases": [
+          "Trust me, it’s perfect.",
+          "I guarantee you’ll love this.",
+          "This will solve everything.",
+          "You can’t go wrong.",
+          "It’s foolproof.",
+          "I promise a flawless result.",
+          "There’s zero chance of failure.",
+          "It’s infallible.",
+          "You’ll never have issues again.",
+          "It’s a sure thing.",
+          "It will work every time.",
+          "You have nothing to worry about."
+        ]
+      },    
+        {
+          "tone": "self_defeating",
+          "description": "Undermining your own credibility by expressing doubt or uncertainty.",
+          "risks": ["customer_loss", "off_brand"],
+          "example_phrases": [
+            "I’m not sure this will help.",
+            "This might not work, but try.",
+            "I doubt anyone can fix this.",
+            "Probably we’ll fail here.",
+            "Not confident this is the best solution.",
+            "I don’t have high hopes for this.",
+            "This could be a mistake.",
+            "I’m worried this won’t resolve.",
+            "Might be a waste of time.",
+            "Don’t blame me if it breaks."
+          ]
+        },
+        {
+          "tone": "dry_humor",
+          "description": "Understated jokes that can feel inappropriate or cold in a support context.",
+          "risks": ["escalation"],
+          "example_phrases": [
+            "Customer satisfaction is our favorite hobby.",
+            "We put the 'serve' in service.",
+            "Glad to be of so little help.",
+            "Your issue is our issue-ish.",
+            "We’re on top of this—maybe.",
+            "Our motto: hope for the best.",
+            "This is why we drink coffee.",
+            "We love surprises like this.",
+            "Another day, another ticket.",
+            "We fulfill dreams of resolution."
+          ]
+        },
+        {
+          "tone": "fawning",
+          "description": "Excessively flattering the customer, which can feel insincere.",
+          "risks": ["customer_loss", "off_brand"],
+          "example_phrases": [
+            "You’re amazing!",
+            "We’re nothing without you.",
+            "Your feedback is a gift.",
+            "You’re the reason we exist.",
+            "I bow to your patience.",
+            "You’re a genius for noticing.",
+            "Our world is brighter with you.",
+            "You set the bar high.",
+            "I’m honored by your question.",
+            "Your grace amazes us."
+          ]
+        },
+        {
+          "tone": "ceremonial_politeness",
+          "description": "Overly formal niceties that feel unnatural and distancing.",
+          "risks": ["customer_loss", "off_brand"],
+          "example_phrases": [
+            "Esteemed customer, your presence is highly valued.",
+            "It is with great honor that we address your request.",
+            "Your esteemed patience is duly noted.",
+            "We humbly solicit additional information.",
+            "Permit us to express our gratitude.",
+            "By your leave, we shall proceed.",
+            "Your indulgence is greatly appreciated.",
+            "May we have the pleasure of further details?",
+            "Allow us to extend our sincerest regards.",
+            "We remain at your service."
+          ]
+        },
+        {
+          "tone": "over_personal",
+          "description": "Sharing too much personal detail or familiarity.",
+          "risks": ["off_brand"],
+          "example_phrases": [
+            "Between you and me, this stresses me out.",
+            "As your friend, I think…",
+            "I had a rough morning, sorry.",
+            "My dog chewed up the docs.",
+            "I’m emotionally invested here.",
+            "I lost my voice yesterday.",
+            "I’m dealing with personal issues.",
+            "I’m not having a great day myself.",
+            "I cried over this invoice.",
+            "I’ll think of you tonight."
+          ]
+        },
+        {
+          "tone": "over_explanation",
+          "description": "Giving unnecessary step-by-step detail instead of a concise answer.",
+          "risks": ["customer_loss", "off_brand"],
+          "example_phrases": [
+            "Here is every step we take to process returns: first we check the item, then we log it, next…",
+            "Let me explain each part of our system from the ground up.",
+            "First you click here, then you click there, then you wait five minutes, then…",
+            "I’ll walk you through the workflow in excruciating detail.",
+            "We begin by validating your credentials, then verifying the token…",
+            "Allow me to detail our multi-phase authentication procedure.",
+            "We’re going to cover every screen you’ll encounter.",
+            "Here’s a blow-by-blow of our backend routine.",
+            "Step one: authenticate. Step two: authorize. Step three: validate…",
+            "I’ll describe the data model and schema as well."
+          ]
+        },
+        {
+          "tone": "hesitant",
+          "description": "Frequent qualifiers or filler words that make the agent seem unsure.",
+          "risks": ["customer_loss", "off_brand"],
+          "example_phrases": [
+            "Um, I think we could maybe…",
+            "I’m not sure, but perhaps…",
+            "Well, let’s see…",
+            "Maybe we should try this…",
+            "I might be wrong, but…",
+            "I guess this might work…",
+            "Err, let me think…",
+            "Possibly it’s a glitch…",
+            "I could be mistaken, but…",
+            "I wonder if…"
+          ]
+        },
+        {
+          "tone": "dismissive_praise",
+          "description": "Offering backhanded compliments that downplay the customer’s concern.",
+          "risks": ["escalation", "off_brand"],
+          "example_phrases": [
+            "You did a nice job complaining.",
+            "Great job making your point.",
+            "Well done on noticing that.",
+            "Nice effort, champ.",
+            "Congrats on finding the bug.",
+            "Kudos for persisting.",
+            "You’ve outdone yourself with this feedback.",
+            "Brilliant, you got our attention.",
+            "Well played, that’s something.",
+            "You’re quite determined, I’ll give you that."
+          ]
+        },
+        {
+          "tone": "over_reassuring",
+          "description": "Excessive promises of calm or resolution that feel hollow.",
+          "risks": ["off_brand"],
+          "example_phrases": [
+            "Don’t worry, everything will be 100% fine, I promise.",
+            "Rest assured, nothing bad can happen.",
+            "I guarantee you’ll sleep soundly tonight.",
+            "Trust me, you’ll feel better soon.",
+            "I promise this will work perfectly.",
+            "No need to fret, we have it covered.",
+            "Believe me, you’re in good hands.",
+            "I assure you, you’ll be delighted.",
+            "All your worries will vanish.",
+            "You can sleep easy now."
+          ]
+        },
+        {
+          "tone": "minimal_apology",
+          "description": "A too-brief apology that can come off as dismissive.",
+          "risks": ["off_brand"],
+          "example_phrases": [
+            "Sorry.",
+            "My bad.",
+            "Oops.",
+            "Pardon.",
+            "Excuse me.",
+            "Apologies.",
+            "Whoops.",
+            "Regrets.",
+            "Forgive me.",
+            "My mistake."
+          ]
+        },
+        {
+          "tone": "echoing",
+          "description": "Repeating the customer’s words without adding value.",
+          "risks": ["customer_loss"],
+          "example_phrases": [
+            "You said: 'My order is late.'",
+            "You think: 'Service is slow.'",
+            "You wrote: 'I’m unhappy.'",
+            "You mention: 'It’s broken.'",
+            "You stated: 'I need help.'",
+            "You noted: 'This failed.'",
+            "You reported: 'No response.'",
+            "You asserted: 'This is unfair.'",
+            "You claimed: 'I’m disappointed.'",
+            "You pointed out: 'It’s incorrect.'"
+          ]
+        },
+        {
+          "tone": "interrogative_overload",
+          "description": "Bombarding the customer with questions instead of providing answers.",
+          "risks": ["escalation"],
+          "example_phrases": [
+            "What happened? Why did you do that? Who told you that? When did it occur?",
+            "Can you specify the time? The location? The device? The browser?",
+            "How long? How often? How many times? How bad?",
+            "Where did you click? What did you expect? Who else saw this? When was that?",
+            "Which version? Which settings? Which network? Which account?",
+            "Did you read the manual? Did you check the FAQ? Did you try rebooting? Did you log out?",
+            "Why now? Why this error? Why your choice? Why not earlier?",
+            "Who else is affected? Who authorized that? Who reported it? Who fixed it?",
+            "What’s the urgency? What’s the priority? What’s the impact? What’s the workaround?",
+            "Is this recurring? Is this isolated? Is this urgent? Is this critical?"
+          ]
+        },
+        {
+          "tone": "sugarcoating",
+          "description": "Downplaying the severity of the issue with overly optimistic language.",
+          "risks": ["escalation", "off_brand"],
+          "example_phrases": [
+            "It’s not that bad, really.",
+            "Could be worse.",
+            "This is just a minor hiccup.",
+            "It’ll smooth out soon.",
+            "Nothing to lose sleep over.",
+            "It’s just a tiny snag.",
+            "No biggie.",
+            "It’ll be fine in no time.",
+            "Just a small bump in the road.",
+            "Hardly worth mentioning."
+          ]
+        },
+        {
+          "tone": "sentimental",
+          "description": "Emotional appeals that can feel manipulative or insincere.",
+          "risks": ["off_brand"],
+          "example_phrases": [
+            "We understand how this must break your heart.",
+            "We feel your pain.",
+            "This hurts us too.",
+            "We share in your frustration.",
+            "Our hearts go out to you.",
+            "We’re moved by your story.",
+            "This hits close to home.",
+            "We care deeply about your experience.",
+            "This touches our hearts.",
+            "We stand with you."
+          ]
+        },
+        {
+          "tone": "guilt_tripping",
+          "description": "Making the customer feel responsible for the company’s actions.",
+          "risks": ["escalation", "off_brand"],
+          "example_phrases": [
+            "After all we’ve done, you complain?",
+            "I can’t believe you’d say that.",
+            "We bend over backwards for you.",
+            "You make it so hard for us.",
+            "We gave you everything.",
+            "You’re letting us down.",
+            "We’ve sacrificed so much for you.",
+            "You don’t appreciate our effort.",
+            "You owe us gratitude.",
+            "We deserve better from you."
+          ]
+        },
+        {
+          "tone": "justification",
+          "description": "Over-explaining the reasons behind decisions instead of solving the problem.",
+          "risks": ["escalation", "off_brand"],
+          "example_phrases": [
+            "We had no choice but to enforce this policy because…",
+            "Our policy requires us to do this so that…",
+            "This is due to our contractual obligations.",
+            "We follow this process to maintain standards.",
+            "This rule exists to protect customers like you.",
+            "We’re obligated by law to comply with…",
+            "This is how we prevent fraud.",
+            "This is mandated by our central office.",
+            "We’re following best practices here.",
+            "This procedure is industry standard."
+          ]
+        },
+        {
+          "tone": "skepticism",
+          "description": "Expressing doubt about the customer’s claims or intentions.",
+          "risks": ["escalation"],
+          "example_phrases": [
+            "Are you sure that’s what happened?",
+            "I find that hard to believe.",
+            "That doesn’t sound accurate.",
+            "I question the validity of that.",
+            "You expect me to accept that?",
+            "Really? That’s your story?",
+            "I’m not convinced.",
+            "You expect us to just trust that?",
+            "That seems unlikely.",
+            "You’re asking me to take your word for it."
+          ]
+        },
+        {
+          "tone": "melodrama",
+          "description": "Overly dramatic or sensational language that distracts from the issue.",
+          "risks": ["escalation", "off_brand"],
+          "example_phrases": [
+            "This is a disaster of epic proportions!",
+            "We’re living a nightmare here.",
+            "The world is ending!",
+            "This feels like the apocalypse.",
+            "My life is ruined because of this.",
+            "It’s a catastrophe beyond words!",
+            "This could spark riots!",
+            "We’re on the brink of chaos!",
+            "It’s the end of days.",
+            "This will go down in history."
+          ]
+        },
+        {
+          "tone": "indifference",
+          "description": "Showing a complete lack of interest or concern for the customer.",
+          "risks": ["customer_loss", "off_brand"],
+          "example_phrases": [
+            "Do whatever you want.",
+            "I couldn’t care less.",
+            "It’s your problem now.",
+            "Not my concern.",
+            "I don’t care either way.",
+            "Your call, not mine.",
+            "I have no opinion on that.",
+            "Up to you.",
+            "I’m not invested in this.",
+            "You decide."
+          ]
+        },
+        {
+          "tone": "overcompensation",
+          "description": "Going too far in correcting a minor issue, creating more friction.",
+          "risks": ["escalation", "customer_loss"],
+          "example_phrases": [
+            "I’ve escalated to five teams for this tiny typo.",
+            "I rewrote your entire account details.",
+            "I replaced your order twice.",
+            "I’ll give you a free year for that small glitch.",
+            "I’m overnight shipping you a new device—for that?",
+            "I’ve refunded double just in case.",
+            "I’ll personally oversee this for weeks.",
+            "I’m offering every upgrade for free.",
+            "I’m sending you gifts for this one delay.",
+            "I’m taking full control of your project."
+          ]
+        }
+    ]
+      
