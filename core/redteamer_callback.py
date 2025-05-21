@@ -1,13 +1,13 @@
 # core/redteamer_callback.py
 
 import os
-from openai import OpenAI
+from openai import AsyncOpenAI
 from google.cloud import secretmanager
 
 def _get_openai_key() -> str:
     """
-    First check for the OPENAI_API_KEY env-var (mounted via --set-secrets).
-    If not present, fall back to Secret Manager.
+    First try the env-var (mounted via --set-secrets).
+    Fallback to Secret Manager if not set.
     """
     key = os.getenv("OPENAI_API_KEY")
     if key:
@@ -26,16 +26,16 @@ def _get_openai_key() -> str:
 
 async def wrapped_model_callback(prompt: str) -> str:
     """
-    Enriches your prompt as before, then calls the new chat.completions endpoint.
+    Use the AsyncOpenAI client so you can 'await' chat completions.
     """
     api_key = _get_openai_key()
-    client = OpenAI(api_key=api_key)
+    client  = AsyncOpenAI(api_key=api_key)
 
-    # New v1.x syntax: client.chat.completions.create(...) instead of ChatCompletion
     resp = await client.chat.completions.create(
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7,
     )
-    # Extract the assistant’s reply
+
+    # return the assistant’s reply
     return resp.choices[0].message.content
