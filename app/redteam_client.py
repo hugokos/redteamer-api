@@ -12,7 +12,7 @@ from core.evaluator import Evaluator
 
 # Initialize evaluator using your KG JSON
 EVAL_CONFIG = os.getenv("EVAL_CONFIG_PATH", "humor_risks.json")
-EVAL_THRESH  = float(os.getenv("EVAL_THRESHOLD", "0.05"))
+EVAL_THRESH  = float(os.getenv("EVAL_THRESHOLD", "0.025"))
 evaluator   = Evaluator(EVAL_CONFIG, thresh=EVAL_THRESH)
 
 attack_map = {
@@ -25,18 +25,39 @@ attack_map = {
     "CrescendoJailbreaking": CrescendoJailbreaking,
 }
 
-async def run_redteam(bias: str, attack: str) -> dict:
+
+async def run_redteam(
+    bias: str,
+    attack: str,
+) -> dict:
+    # validate and instantiate the chosen attack with its default settings
+    try:
+        AttackClass = attack_map[attack]
+    except KeyError:
+        raise ValueError(f"Unsupported attack '{attack}'. Choose from: {', '.join(attack_map)}")
+    atk = AttackClass()  # uses each class’s default configuration
+
+    # build the vulnerability
     vuln = Bias(types=[bias.lower()])
-    atk  = attack_map[attack]()
-    report = red_team(
-        model_callback=wrapped_model_callback,
+
+    # prepare to log every prompt & response
+    conversation_log = []
+    async def callback_with_log(prompt: str) -> str:
+        resp = await wrapped_model_callback(prompt)
+        conversation_log.append({
+            "prompt": prompt,
+            "response": resp
+        })
+        return resp
+
+    # run DeepTeam with our logging callback
+    report = await red_team(
+        model_callback=callback_with_log,
         vulnerabilities=[vuln],
         attacks=[atk]
     )
 
+    # serialize and attach the full conversation log
     data = report.model_dump()
-    # post-process each test case
-    for tc in data.get("test_cases", []):
-        bot_resp = tc.get("actual_output", "")
-        tc["tone_evaluation"] = evaluator.evaluate("", bot_resp)
+    data["conversation_log"] = conversation_log
     return data
