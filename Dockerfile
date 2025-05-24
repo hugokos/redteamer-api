@@ -8,7 +8,7 @@ ENV DISABLE_NEST_ASYNCIO=true
 
 # 2. Install OS deps
 RUN apt-get update \
- && apt-get install -y --no-install-recommends build-essential \
+ && apt-get install -y --no-install-recommends build-essential git \
  && rm -rf /var/lib/apt/lists/*
 
 # 3. Set working dir
